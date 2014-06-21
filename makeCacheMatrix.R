@@ -1,7 +1,7 @@
 ## Create a "CacheMatrix" with vector,nrow and ncol as arguments
 makeCacheMatrix <- function(m,r,c) {
         m1 <- NULL
-        ## with setMatrix we are creating matrix 
+        ##  creating matrix by passing values to the arguments of function makeCacheMatrix
       m <<- matrix(m,nrow=r,ncol=c) 
       m1 <<- NULL
     
