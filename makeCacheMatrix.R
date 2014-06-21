@@ -3,11 +3,13 @@ makeCacheMatrix <- function(m,r,c) {
         m1 <- NULL
         ## with setMatrix we are creating matrix 
       m <<- matrix(m,nrow=r,ncol=c) 
+      m1 <<- NULL
     
     ## create a cacheSolve function that returns the inverse of a matrix,(it if necessary )or else simply display existing 
     cacheSolve <- function() {
         if (is.null(m1)) {
             m1 <<- solve(m)
+            print(m)
         }
         m1
     }
